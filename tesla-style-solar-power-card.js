@@ -648,11 +648,11 @@ class TeslaStyleSolarPowerCard extends HTMLElement {
 
   roundValue(value) {
     // https://stackoverflow.com/questions/11832914/round-to-at-most-2-decimal-places-only-if-necessary
-    if (value > 0.1) {
+    /*if (value > 0.1) {
       value = Math.round((value + Number.EPSILON) * 10) / 10
-    } else {
+    } else {*/
       value = Math.round((value + Number.EPSILON) * 100) / 100
-    }
+    /*}*/
     return value;
   }
 
